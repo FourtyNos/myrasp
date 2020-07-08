@@ -39,7 +39,7 @@
     # IP-Adressen ermitteln
     if ( ifconfig | grep -q "eth0" ) ; then IP_LAN=`ip address show dev eth0 scope global | awk '/inet / {split($2,var,"/"); print var[1]}'
 ` ; else IP_LAN="---" ; fi ;
-    if ( ifconfig | grep -q "wlan0" ) ; then IP_WLAN=`ifconfig wlan0 | grep "inet Adresse" | cut -d ":" -f 2 | cut -d " " -f 1` ; else IP_WLAN="---" ; fi ;
+    if ( ifconfig | grep -q "wlan0" ) ; then IP_WLAN=`ip address show dev wlol0 scope global | awk '/inet / {split($2,var,"/"); print var[1]}` ; else IP_WLAN="---" ; fi ;
     echo "\033[1;32m   .~~.   .~~.    \033[1;36m$DATUM
     \033[1;32m  '. \ ' ' / .'   
     \033[1;31m   .~ .~~~..~.    \033[0;37mHostname......: \033[1;33m$HOSTNAME
