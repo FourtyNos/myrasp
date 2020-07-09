@@ -1,8 +1,9 @@
-  #!/bin/sh
+ 
+    #!/bin/sh
     # dynamische MOTD
-    # hinzufügenzu in namedatei >> /etc/profile
+    # Aufruf in /etc/profile (letzte Zeile)
 
-       # clean terminal
+        #Clean terminal
         clear
 
 
@@ -38,8 +39,9 @@
     RAM3=`free -h -g | grep 'Mem' | awk '{print $4}'`    # Free
     RAM4=`free -h -g | grep 'Swap' | awk '{print $3}'`    # Swap used
     # IP-Adressen ermitteln
-    if ( ifconfig | grep -q "eth0" ) ; then IP_LAN=`ip address show dev eth0 scope global | awk '/inet / {split($2,var,"/"); print var$ ; else IP_LAN="---" ; fi ;
-    if ( ifconfig | grep -q "wlan0" ) ; then IP_WLAN=`ifconfig wlan0 | grep "inet Adresse" | cut -d ":" -f 2 | cut -d " " -f 1` ; else$
+    if ( ifconfig | grep -q "eth0" ) ; then IP_LAN=`ip address show dev eth0 scope global | awk '/inet / {split($2,var,"/"); print var[1]}'
+` ; else IP_LAN="---" ; fi ;
+    if ( ifconfig | grep -q "wlan0" ) ; then IP_WLAN=`ifconfig wlan0 | grep "inet Adresse" | cut -d ":" -f 2 | cut -d " " -f 1` ; else IP_WLAN="---" ; fi ;
      echo ""
      echo ""
     echo "\033[1;32m   .~~.   .~~.    \033[1;36m$DATUM
@@ -56,4 +58,6 @@
     
         echo ""
         echo ""
+
+
 
