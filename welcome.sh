@@ -1,6 +1,6 @@
     #!/bin/sh
     # dynamische MOTD
-    # Aufruf in /etc/profile (letzte Zeile)
+    # hinzufügen in in der letzen Zeile /etc/profile
 
         #Clean terminal
         clear
