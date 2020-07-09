@@ -47,7 +47,7 @@
     \033[1;31m   .~ .~~~..~.    \033[0;37mHostname......: \033[1;33m$HOSTNAME
     \033[1;31m  : .~.'~'.~. :   \033[0;37mLetzter Login.: $LAST1, $LAST2 $LAST3 $LAST4 von $LAST5
     \033[1;31m ~ (   ) (   ) ~  \033[0;37mUptime........: $UP1 Tage, $UP2:$UP3 Stunden
-    \033[1;31m( : '~'.~.'~' : ) \033[0;37m�^x Auslastung..: $LOAD1 (1 Min.) | $LOAD2 (5 Min.) | $LOAD3 (15 Min.)
+    \033[1;31m( : '~'.~.'~' : ) \033[0;37mCpu Auslastung..: $LOAD1 (1 Min.) | $LOAD2 (5 Min.) | $LOAD3 (15 Min.)
     \033[1;31m ~ .~ (   ) ~. ~  \033[0;37mTemperatur....: $TEMP °C
     \033[1;31m  (  : '~' :  )   \033[0;37mSpeicher......: Gesamt: $DISK1 | Belegt: $DISK2 | Frei: $DISK3
     \033[1;31m   '~ .~~~. ~'    \033[0;37mRAM (MB)......: Gesamt: $RAM1 | Belegt: $RAM2 | Frei: $RAM3 | Swap: $RAM4
