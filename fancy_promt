@@ -21,7 +21,9 @@
 ##	|                                                                       |
 ##	+-----------------------------------------------------------------------+
 
-## You need a UTF 8 Language! or it will display no Triangle but ugly Text!
+## 	You need a UTF 8 Language! or it will display no Triangle but ugly Text!
+##	Need to put in the .bashrc at the end  in your ~/.bashrc
+
 ##
 ##	DESCRIPTION:
 ##	This script updates your "PS1" environment variable to display colors.
