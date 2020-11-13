@@ -5,7 +5,7 @@
 ##                     Made by FourtyNos                   ##
 ##   A Skript made for SSH Users. Its purpose is to make   ##
 ##   it easier to handle the Pi via SSH and to have some   ##
-##   tools that can Help.                                  ##
+##   Tools that can help.                                  ##
 #############################################################
 
 
