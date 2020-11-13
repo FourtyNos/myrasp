@@ -14,5 +14,7 @@
 sudo apt-get install mc -Y
 
 
+#Fancy bash promt section
+sudo apt-get install powerline
 
 
