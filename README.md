@@ -1,4 +1,10 @@
 # myrasp
-just first try learning how to usw github
+My first Project on Github.
 
-i just put skripts in here for my own purpose
+I just use to to Save good Skripts for my Pi.
+
+Most are from other People.
+
+Some are not really for the Pi and i made changes that is working for me.
+
+
